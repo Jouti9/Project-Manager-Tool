@@ -2,7 +2,7 @@ const { sign } = require("jsonwebtoken");
 
 const signin = (req, res, next) => {
   if (!req.isAuthenticated()) {
-    res.send({ message: "Wron credentials", status: 401 });
+    res.send({ message: "Wrong credentials", status: 401 });
   } else {
     const generatedToken = sign(
       JSON.stringify(req.user),

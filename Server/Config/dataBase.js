@@ -11,7 +11,6 @@ const db = async () => {
     console.log(error);
   }
 };
-db();
 
 const Users = [
   {
@@ -70,3 +69,5 @@ const Users = [
       "https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-focus-face.jpg?auto=avif,webp&format=jpg&width=944",
   },
 ];
+
+module.exports = { db };
